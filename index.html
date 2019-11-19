@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="container">
+      <section>
+         
+         
+        <form name="calculadora" method="post" action="">
+            <input  type="text" id="visor" class="resultado" value=0 />
+          <table>
+            <tr>
+              <td><input class="cinza" type="button" value="AC" onclick="Limpar()" /></td>
+              <td><input class="cinza" type="button" value="+/-" onclick="Operador('inverter')"/></td>
+              <td><input class="cinza" type="button" value="%" onclick="Operador('porcentagem')"/></td>
+              <td><input class="amarelo" type="button" value="/" onclick="Operador('dividir')"/></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="7" onclick="Numinserido(7)"/></td>
+              <td><input type="button" value="8" onclick="Numinserido(8)"/></td>
+              <td><input type="button" value="9" onclick="Numinserido(9)"/></td>
+              <td><input class="amarelo" type="button" value="x" onclick="Operador('multiplicar')"/></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="4" onclick="Numinserido(4)"/></td>
+              <td><input type="button" value="5" onclick="Numinserido(5)"/></td>
+              <td><input type="button" value="6" onclick="Numinserido(6)"/></td>
+              <td><input class="amarelo" type="button" value="-" onclick="Operador('subtrair')"/></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="1" onclick="Numinserido(1)"/></td>
+              <td><input type="button" value="2" onclick="Numinserido(2)" /></td>
+              <td><input type="button" value="3" onclick="Numinserido(3)"/></td>
+              <td><input class="amarelo" type="button" value="+" onclick="Operador('somar')"/></td>
+            </tr>
+            <tr>
+              <td><input id="zero" type="button" value="0" onclick="Numinserido(0)"/></td>
+              <td><input type="button" value="," onclick="Virgula()"/></td>
+              <td><input class="amarelo" type="button" value="=" onclick="Operador('resultado')"/></td>
+            </tr>
+          </table>
+        </form>
+        <hr>-</hr>
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
